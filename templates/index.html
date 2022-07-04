@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<form action="{{ url_for('search') }}" class="form-inline" method="get">
+    <div class="form-group">
+      <label class="sr-only" for="topic_name">topic_name</label>
+      <input class="form-control" name="topic_name" placeholder="topic_name" type="text"/>
+  </div>
+  <button class="btn btn-default" type="submit">Search</button>
+</form>
+{% endblock %}
